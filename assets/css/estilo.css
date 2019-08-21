@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
 
 /* header */
 .header{
@@ -11,7 +16,7 @@
     background-color: #c0392b;
     background-image: linear-gradient(#c0392b , #e74c3c);
   }
-  .header--title{
+  .header__title{
   color: #ffffff;
   text-shadow: 0.5px 0.5px 1px #000000;
   font-family: 'Roboto', sans-serif;
@@ -19,12 +24,38 @@
   padding: 30px;
   text-align: center;
   }
-  .header--title-white{
+@media (min-width:600px){
+  .header__title{
+    text-align: left;
+  }
+}
+
+  .header__title--bgwhite{
     color: #c0392b;
     background-color: #ffffff;
     padding: 6px;
     border-radius: 6px;
   }
+  .menu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width:600px){
+    .menu{
+      flex-direction: row;
+    }
+  }
+    .menu__item > a{
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    }
+    .menu__item > a:hover{
+    color: #c0392b;
+    background-color: #fff;
+    }
 
 /*serie cover main page*/
 
