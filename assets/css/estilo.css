@@ -15,7 +15,15 @@
     
     background-color: #c0392b;
     background-image: linear-gradient(#c0392b , #e74c3c);
+    /* display: flex;
+    flex-direction: column;
   }
+@media (min-width: 600px){
+  .header{
+    flex-direction: column-reverse;
+  }*/
+}
+
   .header__title{
   color: #ffffff;
   text-shadow: 0.5px 0.5px 1px #000000;
@@ -59,16 +67,24 @@
 
 /*serie cover main page*/
 
+.series{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .serie{
   text-align: center;
+  margin: 0 auto;
   }
-  .serie--title{
+
+  .serie__title{
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     padding: 20px 0 2.5px;
     
   }
-  .serie--genre{
+  .serie__genre{
    font-family: 'Open Sans', sans-serif;
    font-size: 16px;
    color: #a9a4a4;
@@ -76,14 +92,14 @@
    padding: 2.5px 0 20px;
  
   }
-  .serie--image{
+  .serie__image{
     display: block;
     max-width: 328px;
     margin: 0 auto;
     border-radius: 5px;
 
   }
-  .serie--readmore{
+  .serie__readmore{
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
     background-color: #c0392b; 
@@ -95,7 +111,7 @@
     border-radius: 6px;
 
   }
-   .serie--readmore:hover{
+   .serie__readmore:hover{
      background-color: #e74c3c;
    }
 
@@ -106,10 +122,10 @@
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
 }
-.footer--element{
+.footer__element{
   padding: 20px;
 }
- .footer--image{
+ .footer__image{
    width: 25px;
    height: 25px;
    margin-top: 10px;
@@ -121,13 +137,13 @@
 .seriedetail{
   text-align: center;
   }
-  .seriedetail--title{
+  .seriedetail__title{
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     padding: 20px 0 2.5px;
     
   }
-  .seriedetail--genre{
+  .seriedetail__genre{
    font-family: 'Open Sans', sans-serif;
    font-size: 16px;
    color: #a9a4a4;
@@ -135,7 +151,7 @@
    padding: 2.5px 0 20px;
  
   }
-  .seriedetail--image{
+  .seriedetail__image{
     display: block;
     max-width: 328px;
     margin: 0 auto;
@@ -143,7 +159,7 @@
 
   }
 
-   .seriedetail--text{
+   .seriedetail__text{
      font-size: 18px;
      font-family: 'Roboto', sans-serif;
      line-height: 1.5;
@@ -153,7 +169,7 @@
    }
 
 
-  .seriedetail--watchtrailler{
+  .seriedetail__watchtrailler{
     font-family: 'Roboto', sans-serif;
     color: #000000;
     background-color: #f1c40f; 
@@ -165,7 +181,7 @@
     border-radius: 6px;
 
   }
-   .serie--watchtrailler:hover{
+   .serie__watchtrailler:hover{
      background-color: rgba(241, 196, 15);
    }
 /* serieavaliation */
